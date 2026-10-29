@@ -2,7 +2,7 @@
  * @name ChhMembers
  * @author the chh guys
  * @description all of us
- * @version 1.6.0
+ * @version 1.7.0
 */
 
 /* //// fonts //// */
@@ -49,7 +49,51 @@
 	src: url("https://raw.githubusercontent.com/jelleejamm/chhcss/refs/heads/main/fnt/typewriter.ttf") format('truetype');
 }
 
+@font-face {
+	font-family: 'chancur';
+	src: url("https://raw.githubusercontent.com/jelleejamm/chhcss/refs/heads/main/fnt/chancur.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'spacemono';
+    src: url("https://raw.githubusercontent.com/jelleejamm/corru.theme/refs/heads/main/assets/fnt/SpaceMono-Regular.woff2") format('woff2'),
+    url("https://raw.githubusercontent.com/jelleejamm/corru.theme/refs/heads/main/assets/fnt/SpaceMono-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'spacemono';
+    src: url("https://raw.githubusercontent.com/jelleejamm/corru.theme/refs/heads/main/assets/fnt/SpaceMono-Bold.woff2") format('woff2'),
+    url("https://raw.githubusercontent.com/jelleejamm/corru.theme/refs/heads/main/assets/fnt/SpaceMono-Bold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* //// font end //// */
+
+/* //// corru colors for obi //// */
+
+:root li[data-author-id="1436425527153004606"] {
+    --dark-color: black;
+    --bright-color: white;
+    --friend-color: #00ffff;
+    --obesk-color: #ff00ff;
+    --neutral-color: #ffff00;
+    --bastard-color: #ff0066;
+    --fundfriend-color: #00ff66;
+    --dread-color: #6D0000;
+
+    --custom-message-margin-left-content-cozy: 20px;
+    --custom-message-spacing-vertical-container-cozy: 5px;
+
+    --dark-color-swappa: var(--dark-color);
+    --bright-color-swappa: var(--bright-color);
+}
+
+/* //// corru end //// */
 
 /* THE CRACKHEAD HOUSE */
 
@@ -258,10 +302,22 @@ li[data-author-id="636050805103001650"] {
 	--text-subtle: black !important;
 }
 
+/* An animation for use when we figure out how to make angela's background animate properly */
+/*
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, -300px, 0);
+    }
+}*/
+
 /* Apply custom background - Should be modified as to not break the below blocks - See next comment for details */
 li[data-author-id="636050805103001650"] .message__5126c {
     background-color: #C2AEEF;
     background-image: url('https://raw.githubusercontent.com/jelleejamm/chhcss/refs/heads/main/img/angelapolka.png') !important;
+    background-attachment: fixed !important;
     background-size: 300px 300px !important;
     border: 4px solid #DACCFF;
     border-radius: 15px;
@@ -637,6 +693,227 @@ li[data-author-id="844289867714134097"] .timestamp_c19a55,
 li[data-author-id="844289867714134097"] .chipletContainerInline__10651
 {
 	display: none;
+}
+
+/* OBI */
+/* V-NOTE: Important I mark this as my own note since this relates to me directly. The below is all Angela's work, and I do not have the expertise nor desire to notate down all of what all of this does. At least not at the time of writing, maybe I'll do it later. But there won't be any guiding comments here. */
+
+li[data-author-id="1436425527153004606"] .timestampVisibleOnHover_c19a55 {
+    display: none;
+}
+
+li[data-author-id="1436425527153004606"] .groupStart__5126c {
+    padding-bottom: 5px !important;
+}
+
+li[data-author-id="1436425527153004606"] .header_c19a55, li[data-author-id="1436425527153004606"] .channelTextArea_f75fb0,
+li[data-author-id="1436425527153004606"] .statusText_ab8609,
+li[data-author-id="1436425527153004606"] .usernameAndPronounsRow__26b1f,
+li[data-author-id="1436425527153004606"] .pronouns__26b1f,
+li[data-author-id="1436425527153004606"] .descriptionClamp_f5f93a .markup__75297 div,
+li[data-author-id="1436425527153004606"] .menu_c1e9c4,
+li[data-author-id="1436425527153004606"] .container_c9d15c.textXs_c9d15c div,
+li[data-author-id="1436425527153004606"].tooltipContent_c36707,
+li[data-author-id="1436425527153004606"] .tooltipContent__4e35b div,
+li[data-author-id="1436425527153004606"] .button_a22cb0.primary_a22cb0 div div span, li[data-author-id="1436425527153004606"] .button_a22cb0.secondary_a22cb0:not(.fullWidth_a22cb0), li[data-author-id="1436425527153004606"] .button__201d5,
+li[data-author-id="1436425527153004606"] .vc-bi-header-text {
+    font-family: "spacemono", monospace !important;
+}
+
+li[data-author-id="1436425527153004606"] .usernameText_c19a55 .innerContainer_dfb989  {
+    font-family: "spacemono", monospace;
+    font-size: unset;
+    line-height: unset;
+    text-transform: unset;
+}
+
+li[data-author-id="1436425527153004606"] .contents_c19a55 ul {
+    margin-left: 20px;
+}
+
+li[data-author-id="1436425527153004606"] .contents_c19a55 ol {
+    margin-left: calc(14px + var(--totalCharacters) * 13px);
+}
+
+li[data-author-id="1436425527153004606"] .username_c19a55:not(.usernameColorOnName_c19a55) {
+    color: var(--obesk-color);
+}
+
+li[data-author-id="1436425527153004606"] .messageContent_c19a55 {
+    font-family: "spacemono", monospace !important;
+    transition: transform 400ms ease-in-out;
+    letter-spacing: 0.25px;
+    color: var(--obesk-color);
+}
+
+li[data-author-id="1436425527153004606"] .container_b7e1cb, li[data-author-id="1436425527153004606"] .contents_c19a55 {
+    background: var(--dark-color-swappa) !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--obesk-color) !important;
+    border-radius: 0 !important;
+    padding: 10px;
+}
+
+li[data-author-id="1436425527153004606"] .content__122e4 {
+    background: var(--dark-color-swappa) !important;
+    border-width: 1px !important;
+    border-style: solid;
+    border-color: var(--obesk-color) !important;
+    border-radius: 0 !important;
+    padding: 10px;
+}
+
+li[data-author-id="1436425527153004606"] .content__122e4 .messageContent_c19a55 {
+    color: var(--obesk-color) !important;
+}
+
+li[data-author-id="1436425527153004606"] .content__122e4 .container_b7e1cb {
+    border-width: 0;
+    border-style: none;
+}
+
+li[data-author-id="1436425527153004606"] .cozyMessage__5126c .contents_c19a55 .avatarDecoration_c19a55,
+li[data-author-id="1436425527153004606"] .message_d06995 .contents_c19a55 .avatarDecoration_c19a55,
+li[data-author-id="1436425527153004606"] .singleMessage__376cb .contents_c19a55 .avatarDecoration_c19a55 {
+    min-width: 68px;
+    min-height: 68px;
+    transform: translate(3.5px,-6px);
+}
+
+li[data-author-id="1436425527153004606"] .cozyMessage__5126c .contents_c19a55 .avatar_c19a55,
+li[data-author-id="1436425527153004606"] .message_d06995 .contents_c19a55 .avatar_c19a55,
+li[data-author-id="1436425527153004606"] .singleMessage__376cb .contents_c19a55 .avatar_c19a55 {
+    border-radius: 100%;
+    min-width: 58px;
+    min-height: 58px;
+    border-color: var(--obesk-color);
+    border-style: double;
+    border-width: 5px;
+    transform: translateY(-10px);
+    background-color: var(--dark-color-swappa);
+}
+
+li[data-author-id="1436425527153004606"] .groupStart__5126c .contents_c19a55:has(.avatar_c19a55):before {
+    content: "";
+    display: block;
+    inset-inline-start: var(--custom-message-margin-horizontal);
+    margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy));
+    overflow: hidden;
+    position: absolute;
+    z-index: -1 !important;
+    left: calc(58px);
+    top: 30px;
+    height: 10px;
+    width: 40px;
+    border: 0.32rem double;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-color: var(--obesk-color);
+    background-color: var(--dark-color-swappa);
+}
+
+li[data-author-id="1436425527153004606"] .message__5126c {
+    animation: messagein 0.4s ease-out;
+}
+
+li[data-author-id="1436425527153004606"] .message__5126c:has(.isSending_c19a55) {
+    animation: none;
+    transform: translateX(-100vw);
+}
+
+li[data-author-id="1436425527153004606"] .groupStart__5126c:has(.repliedMessage_c19a55) .contents_c19a55:has(.avatar_c19a55):before {
+    top: 55px;
+}
+
+li[data-author-id="1436425527153004606"] .contents_c19a55:has(+ .container_b7e1cb:not(:empty)) { /* the way css works is so fucking strange why does this exist */
+    border-bottom-width: 0px !important;
+    padding-bottom: 5px;
+}
+
+li[data-author-id="1436425527153004606"] .contents_c19a55 + .container_b7e1cb { /* this too */
+    border-top-width: 0px !important;
+    padding-top: 0px;
+}
+
+li[data-author-id="1436425527153004606"] .groupStart__5126c.expanded__7a70a {
+    padding-inline-start: 0px !important;
+}
+
+li[data-author-id="1436425527153004606"] .groupStart__5126c:has(.avatar_c19a55):not(.backgroundFlash__5126c) {
+    padding-inline-start: 100px;
+}
+
+li[data-author-id="1436425527153004606"] .singleMessage__376cb {
+    padding-inline-start: 100px !important;
+}
+
+li[data-author-id="1436425527153004606"]  .groupStart__5126c:has(.repliedMessage_c19a55) .contents_c19a55:has(.avatar_c19a55):before {
+    top: 55px;
+}
+
+/* MUDGEON */
+
+li[data-author-id="788948951180509255"] .avatar_c19a55,
+li[data-author-id="788948951180509255"] .repliedMessageClickableSpine_c19a55,
+li[data-author-id="788948951180509255"] .timestampVisibleOnHover_c19a55
+{
+    display: none;
+}
+
+/* Make the message more textbox-ish in size and location. */
+li[data-author-id="788948951180509255"] .cozyMessage__5126c {
+    padding-left: 30px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-left: 30px;
+    margin-right: 60% !important;
+    margin-top: 12px;
+}
+
+li[data-author-id="788948951180509255"] .header_c19a55,
+li[data-author-id="788948951180509255"] .messageContent_c19a55,
+li[data-author-id="788948951180509255"] .repliedMessage_c19a55,
+li[data-author-id="788948951180509255"] .container_b7e1cb {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 1em
+}
+
+li[data-author-id="788948951180509255"] .messageContent_c19a55,
+li[data-author-id="788948951180509255"] .header_c19a55,
+li[data-author-id="788948951180509255"] .container_b7e1cb {
+    flex-direction: column;
+}
+
+li[data-author-id="788948951180509255"] .timestamp_c19a55,
+li[data-author-id="788948951180509255"] .repliedMessage_c19a55, {
+    flex-direction: row !important;
+}
+
+li[data-author-id="788948951180509255"] .headerText_c19a55 .username_c19a55 {
+    font-size: 0em;
+}
+
+li[data-author-id="788948951180509255"] .headerText_c19a55 .username_c19a55::after {
+    content: "Mudgeon";
+    font-size: 20px;
+}
+li[data-author-id="788948951180509255"] .timestamp_c19a55 {
+    font-size: 0.7em;
+}
+
+li[data-author-id="788948951180509255"] .message__5126c {
+    background-image: linear-gradient(to bottom, rgba(116, 126, 126, 0.4) 50%, rgba(116, 125, 125, 0.8)), url('https://raw.githubusercontent.com/jelleejamm/chhcss/refs/heads/main/img/mudgebg.png') !important;
+    background-size: 900px !important;
+    border: 3px solid #f5ffff;
+    border-radius: 0.6em;
+    text-shadow:
+        0px 0px 3px black,
+        0px 0px 3px black;
 }
 
 /*/////////// funny emojis //////////////*/
